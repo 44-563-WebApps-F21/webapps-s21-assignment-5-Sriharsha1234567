@@ -5,7 +5,7 @@
   <title>Animals</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  nnnn
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -18,6 +18,33 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="animals.html">Interesting Animals</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="plane.html">Plane Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="train.html">Train Page</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="plane.html">text Plane</a></li>
+              <li><a class="dropdown-item" href="train.html">text Train</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <h1>Animal by Sri Harsha kikkuri</h1>
   <div class="container">
 
@@ -148,5 +175,32 @@
     </div>
   </div>
   <br><br>
+  <div class="dropdown" >
+    <button  type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      &nbsp;&nbsp;Dropdown Button
+    </button>
+    <ul class="dropdown-menu" >
+      <li><a class="dropdown-item" href="plane.html ">Plane page</a></li>
+      <li><a class="dropdown-item" href="train.html">Train Page</a></li>
+    </ul>
+  </div>
+</div>
+  <br><br>
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">&nbsp;Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">&nbsp;We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="Animal" class="form-label">&nbsp;Enter your animal</label>
+      <input type="text" class="form-control">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input">
+      <label class="form-check-label">&nbsp;Sign up for newsletter? </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </body>
 </html>
